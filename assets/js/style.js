@@ -38,3 +38,11 @@ class Mascota extends Animal {
     this._enfermedad = nuevaEnfermedadM;
   }
 }
+function registro() {
+  let nombre = document.getElementById("propietario").value; //ir al HTML y ver el id.
+  let telefono = document.getElementById("telefono").value;
+  let direccion = document.getElementById("direccion").value;
+  let nombreMascota = document.getElementById("nombreMascota").value;
+  let enfermedad = document.getElementById("enfermedad").value;
+  let tipo = document.getElementById("tipo").value;
+}
