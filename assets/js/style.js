@@ -47,4 +47,15 @@ function registro() {
   let tipo = document.getElementById("tipo").value;
 
   if(!nombre || !nombreMascota || !enfermedad || !tipo) return alert('Debe completar los campos requeridos');  // validacion 
+
+  let mascota1 = new Mascota(nombre, direccion, telefono, tipo, nombreMascota, enfermedad);
+
+  const resultado = document.getElementById("resultado");
+  const ul = document.createElement("ul")
+  ul.innerHTML = `
+    <li>${mascota1.datosPropietario()}. ${mascota1.tipo} </li>
+    <li>Mientras que el nombre de la mascota es: ${mascota1.nombre} y la enfermedad es: ${mascota1.enfermedad}</li>
+  `;
+  resultado.appendChild(ul);
+
 }
