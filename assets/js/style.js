@@ -19,3 +19,22 @@ class Animal extends Propietario {
     return `El tipo de animal es:  ${this._tipo}`
   }
 }
+class Mascota extends Animal {
+  constructor(nombre, direccion, telefono, tipo, nombreMascota, enfermedad) {
+    super(nombre, direccion, telefono, tipo);
+    this._nombre = nombreMascota;
+    this._enfermedad = enfermedad;
+  }
+  get nombre() {
+    return this._nombre
+  }
+  set nombre (nuevoNombreM) {
+    this._nombre= nuevoNombreM;
+  }
+  get enfermedad() {
+    return this._enfermedad
+  }
+  set enfermedad(nuevaEnfermedadM) {
+    this._enfermedad = nuevaEnfermedadM;
+  }
+}
