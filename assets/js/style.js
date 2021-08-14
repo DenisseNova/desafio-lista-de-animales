@@ -45,4 +45,6 @@ function registro() {
   let nombreMascota = document.getElementById("nombreMascota").value;
   let enfermedad = document.getElementById("enfermedad").value;
   let tipo = document.getElementById("tipo").value;
+
+  if(!nombre || !nombreMascota || !enfermedad || !tipo) return alert('Debe completar los campos requeridos');  // validacion 
 }
