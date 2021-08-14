@@ -58,4 +58,11 @@ function registro() {
   `;
   resultado.appendChild(ul);
 
+  document.getElementById("propietario").value = ""
+  document.getElementById("telefono").value = ""
+  document.getElementById("direccion").value = ""
+  document.getElementById("tipo").value = ""
+  document.getElementById("nombreMascota").value = ""
+  document.getElementById("enfermedad").value = ""
+
 }
